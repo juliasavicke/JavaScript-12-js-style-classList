@@ -11,13 +11,22 @@
   <body>
     <div class="container">
       <h1>Style ir class list</h1>
+
+      <fieldset>
+        <legend>Control panel</legend>
+        <input type="text" id="artColorInput" placeholder="Article spalva" />
+        <button id="btn">make article 50% width</button>
+        <button id="hideBtn">Hide article</button>
+        <button id="toggleBtn">Toggle article</button>
+      </fieldset>
+
       <section>
-        <h2>Articles</h2>
-        <article>
+        <h2 id="sectionTitle">Articles</h2>
+        <article class="card" id="article">
           <h3>Html is the magic of the web</h3>
           <p class="date">2022 05 05</p>
-          <h4>James Band</h4>
-          <p>
+          <h4 id="author" class="author">James Band</h4>
+          <p id="text" class="text">
             A river flows out of Eden he placed the cherubim, and a sword
             flaming and turning to guard the way to the sight and good for food,
             and that it was good. And let birds fly above the dome. And it was
@@ -35,6 +44,36 @@
             tree of life also in the midst of the trees in the garden.
           </p>
         </article>
+      </section>
+      <section>
+        <h2>Accordion</h2>
+        <ul>
+          <li>
+            <h3 class="accTitle">Html</h3>
+            <pre class="accText" id="html">
+              HTML is the standard markup language for Web pages. With HTML you
+              can create your own Website. HTML is easy to learn - You will
+              enjoy it!
+            </pre>
+          </li>
+          <li>
+            <h3 class="accTitle">CSS</h3>
+            <pre class="accText" id="css">
+              CSS is the language we use to style an HTML document. CSS
+              describes how HTML elements should be displayed. This tutorial
+              will teach you CSS from basic to advanced.</pre
+            >
+          </li>
+          <li>
+            <h3 class="accTitle">JS</h3>
+            <pre class="accText" id="js">
+              JavaScript is the world's most popular programming language.
+              JavaScript is the programming language of the Web. JavaScript is
+              easy to learn. This tutorial will teach you JavaScript from basic
+              to advanced.</pre
+            >
+          </li>
+        </ul>
       </section>
     </div>
   </body>

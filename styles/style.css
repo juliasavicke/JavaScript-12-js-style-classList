@@ -1,2 +1,48 @@
 @import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
 @import url("reset.css");
+.accTitle {
+  cursor: pointer;
+  background-color: rgb(219, 219, 219);
+}
+
+.accText {
+  /* display: none; */
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  transition: all 0.8s;
+  height: 0;
+  overflow: hidden;
+  /* display: block; */
+}
+
+.specialArt {
+  background-color: coral;
+}
+.specialArt .text {
+  line-height: 1.5;
+  letter-spacing: 2px;
+  font-style: italic;
+}
+
+.specialArt .author {
+  font-size: 4rem;
+}
+
+.mainTitle {
+  color: blue;
+  font-size: 3rem;
+}
+
+.open {
+  display: block;
+  transform: scaleY(1);
+  transition: all 1s;
+}
+
+.displayNone {
+  display: none;
+}
+
+.displayBlock {
+  display: block;
+}
